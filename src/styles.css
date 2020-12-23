@@ -1,0 +1,74 @@
+.Desktop {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Window {
+  border: 1px solid black;
+  height: 80vh;
+  margin: 1rem;
+  padding: 1vh;
+  bottom: 1vh;
+}
+
+.Dock {
+  /* text-align: center; */
+  /* width: 100%; */
+}
+
+.app-logo {
+  margin-left: 1vw;
+  width: 9vh;
+  height: 9vh;
+}
+
+.app-logo:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+.App {
+  cursor: pointer;
+  text-align: center;
+  margin-right: 1rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  /* display: inline; */
+}
+
+.dot {
+  margin-left: 0.4rem;
+  border-radius: 50%;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.close {
+  background-color: #ff605c;
+}
+
+.minimize {
+  background-color: #ffbd44;
+}
+
+.expand {
+  background-color: #00ca4e;
+}
+
+/* Window CSS */
+
+.container {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#content {
+  margin: 1rem;
+  font-size: 2vmax;
+}
