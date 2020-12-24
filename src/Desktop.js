@@ -11,9 +11,9 @@ class Desktop extends React.Component {
     };
   }
 
-  handleClick = (index) => {
+  handleClick = (name) => {
     this.setState({
-      window: <Window index={index} />
+      window: <Window index={name} />
     });
   };
 
@@ -21,7 +21,7 @@ class Desktop extends React.Component {
     return (
       <div className="Desktop">
         {this.state.window}
-        <Dock onClick={(index) => this.handleClick(index)} />
+        <Dock onClick={(name) => this.handleClick(name)} />
       </div>
     );
   }

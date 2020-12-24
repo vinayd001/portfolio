@@ -3,23 +3,16 @@ import "./styles.css";
 import App from "./App";
 
 export default function Dock(props) {
-  const images = [
-    "education",
-    "achievement",
-    "education",
-    "achievement",
-    "education",
-    "achievement"
-  ];
+  const images = ["achievement", "achievement", "achievement", "achievement"];
 
   return (
     <div className="Dock">
-      {images.map((img, index) => {
+      {images.map((name, index) => {
         return (
           <App
             key={index}
-            image={img}
-            updateStateOnClick={() => props.onClick(index)}
+            image={name}
+            updateStateOnClick={() => props.onClick(name)}
           />
         );
       })}

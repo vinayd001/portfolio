@@ -1,25 +1,23 @@
 .Desktop {
   font-family: sans-serif;
-  text-align: center;
-}
-
-.Window {
-  border: 1px solid black;
-  height: 80vh;
-  margin: 1rem;
-  padding: 1vh;
-  bottom: 1vh;
 }
 
 .Dock {
-  /* text-align: center; */
-  /* width: 100%; */
+  position: fixed;
+  bottom: 1vw;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  /* grid-gap: 1vw; */
+}
+
+.App {
+  cursor: pointer;
 }
 
 .app-logo {
   margin-left: 1vw;
   width: 9vh;
-  height: 9vh;
 }
 
 .app-logo:hover {
@@ -28,15 +26,13 @@
   transform: scale(1.5);
 }
 
-.App {
-  cursor: pointer;
-  text-align: center;
-  margin-right: 1rem;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  position: fixed;
-  /* display: inline; */
+/* Window CSS */
+
+.Window {
+  border: 1px solid black;
+  height: 80vh;
+  margin: 1rem;
+  padding: 1vh;
 }
 
 .dot {
@@ -58,8 +54,6 @@
 .expand {
   background-color: #00ca4e;
 }
-
-/* Window CSS */
 
 .container {
   margin-top: 5vh;
