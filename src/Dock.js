@@ -3,7 +3,12 @@ import "./styles.css";
 import App from "./App";
 
 export default function Dock(props) {
-  const images = ["achievement", "achievement", "achievement", "achievement"];
+  const images = [
+    "achievements",
+    "achievements",
+    "achievements",
+    "achievements"
+  ];
 
   return (
     <div className="Dock">

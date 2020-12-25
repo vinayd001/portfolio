@@ -13,7 +13,7 @@ class Desktop extends React.Component {
 
   handleClick = (name) => {
     this.setState({
-      window: <Window index={name} />
+      window: <Window name={name} />
     });
   };
 
